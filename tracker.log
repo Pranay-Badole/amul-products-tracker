@@ -1,0 +1,89 @@
+19:23:41  ERROR     
+❌  sender_password is empty in config.yaml!
+    Generate a Gmail App Password at:
+    https://myaccount.google.com/apppasswords
+    Then paste it into config.yaml → email → sender_password
+
+19:24:25  INFO      ═══════════════════════════════════════════════════════
+19:24:25  INFO        Amul Protein Tracker  🥛
+19:24:25  INFO        Interval : 5 minutes
+19:24:25  INFO        Sites    : 1
+19:24:25  INFO        Email    → 1601pranay@gmail.com
+19:24:25  INFO      ═══════════════════════════════════════════════════════
+19:24:25  INFO      
+⏰  Run at: 17 Apr 2026  19:24:25
+19:24:25  INFO      ───────────────────────────────────────────────────────
+19:24:25  INFO      Checking: Amul Protein Shop
+19:24:26  INFO      Navigating to https://shop.amul.com/en/browse/protein
+19:24:31  INFO      Setting pincode: 411057
+19:24:31  INFO      Pincode modal already open (auto-triggered).
+19:24:33  INFO      Clicked suggestion: '411057'
+19:24:37  INFO      Pincode 411057 set ✅
+19:24:37  INFO      Waiting for product cards …
+19:24:37  INFO      Scrolling to load all products …
+19:24:43  INFO      Scrolling done — 17 cards loaded.
+19:24:43  INFO      Found 17 product cards
+19:24:43  INFO      📦 Amul Protein Shop — 17 products
+19:24:43  INFO      Product                                                  Status      Price
+19:24:43  INFO      -------------------------------------------------------------------------------------
+19:24:43  INFO      ✅  Amul High Protein Atta, 65 g | Pack of 30 Sachets     AVAILABLE   MRP₹1,200 (USP  ₹0.62/g)
+19:24:43  INFO      ✅  Amul Kool Protein Milkshake | Vanilla, 180 mL | Pack  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:24:43  INFO      ✅  Amul Kool Protein Milkshake | Chocolate, 180 mL | Pa  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:24:43  INFO      ✅  Amul Kool Protein Milkshake | Arabica Coffee, 180 mL  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:24:43  INFO      ✅  Amul Kool Protein Milkshake | Kesar, 180 mL | Pack o  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:24:43  INFO      ✅  Amul High Protein Blueberry Shake, 200 mL | Pack of   AVAILABLE   MRP₹1,500 (USP  ₹250.00/L)
+19:24:43  INFO      ✅  Amul High Protein Paneer, 400 g | Pack of 24          AVAILABLE   MRP₹3,480 (USP  ₹362.50/kg)
+19:24:43  INFO      ✅  Amul Whey Protein, 32 g | Pack of 60 Sachets          AVAILABLE   MRP₹3,500 (USP  ₹1.82/g)
+19:24:43  INFO      ✅  Amul Chocolate Whey Protein Gift Pack, 34 g | Pack o  AVAILABLE   MRP₹765 (USP  ₹2.25/g)
+19:24:43  INFO      ✅  Amul Chocolate Whey Protein, 34 g | Pack of 60 sache  AVAILABLE   MRP₹3,690 (USP  ₹1.81/g)
+19:24:43  INFO      ✅  Amul High Protein Buttermilk, 200 mL | Pack of 30     AVAILABLE   MRP₹750 (USP  ₹125.00/L)
+19:24:43  INFO      ✅  Amul High Protein Milk, 250 mL | Pack of 32           AVAILABLE   MRP₹3,168 (USP  ₹396.00/L)
+19:24:43  INFO      ❌  Amul Whey Protein Gift Pack, 32 g | Pack of 10 sache  SOLD OUT    MRP₹750 (USP  ₹2.34/g)
+19:24:43  INFO      ❌  Amul Whey Protein, 32 g | Pack of 30 Sachets          SOLD OUT    MRP₹2,000 (USP  ₹2.08/g)
+19:24:43  INFO      ❌  Amul Chocolate Whey Protein, 34 g | Pack of 30 sache  SOLD OUT    MRP₹2,070 (USP  ₹2.03/g)
+19:24:43  INFO      ❌  Amul High Protein Plain Lassi, 200 mL | Pack of 30    SOLD OUT    MRP₹750 (USP  ₹125.00/L)
+19:24:43  INFO      ❌  Amul High Protein Rose Lassi, 200 mL | Pack of 30     SOLD OUT    MRP₹750 (USP  ₹125.00/L)
+19:24:48  INFO      ✅ Email sent → 1601pranay@gmail.com | Subject: 🔔 [Amul Protein Shop] Tracker started — current stock status
+19:24:48  INFO      --once flag set — exiting.
+19:30:39  INFO      ═══════════════════════════════════════════════════════
+19:30:39  INFO        Amul Protein Tracker  🥛
+19:30:39  INFO        Interval : 30 minutes
+19:30:39  INFO        Sites    : 1
+19:30:39  INFO        Email    → 1601pranay@gmail.com
+19:30:39  INFO        Watching : Plain Lassi | Rose Lassi
+19:30:39  INFO      ═══════════════════════════════════════════════════════
+19:30:39  INFO      
+⏰  Run at: 17 Apr 2026  19:30:39
+19:30:39  INFO      ───────────────────────────────────────────────────────
+19:30:39  INFO      Checking: Amul Protein Shop
+19:30:40  INFO      Navigating to https://shop.amul.com/en/browse/protein
+19:30:43  INFO      Setting pincode: 411057
+19:30:43  INFO      Pincode modal already open (auto-triggered).
+19:30:46  INFO      Clicked suggestion: '411057'
+19:30:50  INFO      Pincode 411057 set ✅
+19:30:50  INFO      Waiting for product cards …
+19:30:50  INFO      Scrolling to load all products …
+19:30:55  INFO      Scrolling done — 17 cards loaded.
+19:30:56  INFO      Found 17 product cards
+19:30:56  INFO      📦 Amul Protein Shop — 17 products
+19:30:56  INFO      Product                                                  Status      Price
+19:30:56  INFO      -------------------------------------------------------------------------------------
+19:30:56  INFO      ✅  Amul High Protein Atta, 65 g | Pack of 30 Sachets     AVAILABLE   MRP₹1,200 (USP  ₹0.62/g)
+19:30:56  INFO      ✅  Amul Kool Protein Milkshake | Vanilla, 180 mL | Pack  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:30:56  INFO      ✅  Amul Kool Protein Milkshake | Chocolate, 180 mL | Pa  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:30:56  INFO      ✅  Amul Kool Protein Milkshake | Arabica Coffee, 180 mL  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:30:56  INFO      ✅  Amul Kool Protein Milkshake | Kesar, 180 mL | Pack o  AVAILABLE   MRP₹1,200 (USP  ₹222.22/L)
+19:30:56  INFO      ✅  Amul High Protein Blueberry Shake, 200 mL | Pack of   AVAILABLE   MRP₹1,500 (USP  ₹250.00/L)
+19:30:56  INFO      ✅  Amul High Protein Paneer, 400 g | Pack of 24          AVAILABLE   MRP₹3,480 (USP  ₹362.50/kg)
+19:30:56  INFO      ✅  Amul Whey Protein, 32 g | Pack of 60 Sachets          AVAILABLE   MRP₹3,500 (USP  ₹1.82/g)
+19:30:56  INFO      ✅  Amul Chocolate Whey Protein Gift Pack, 34 g | Pack o  AVAILABLE   MRP₹765 (USP  ₹2.25/g)
+19:30:56  INFO      ✅  Amul Chocolate Whey Protein, 34 g | Pack of 60 sache  AVAILABLE   MRP₹3,690 (USP  ₹1.81/g)
+19:30:56  INFO      ✅  Amul High Protein Buttermilk, 200 mL | Pack of 30     AVAILABLE   MRP₹750 (USP  ₹125.00/L)
+19:30:56  INFO      ✅  Amul High Protein Milk, 250 mL | Pack of 32           AVAILABLE   MRP₹3,168 (USP  ₹396.00/L)
+19:30:56  INFO      ❌  Amul Whey Protein Gift Pack, 32 g | Pack of 10 sache  SOLD OUT    MRP₹750 (USP  ₹2.34/g)
+19:30:56  INFO      ❌  Amul Whey Protein, 32 g | Pack of 30 Sachets          SOLD OUT    MRP₹2,000 (USP  ₹2.08/g)
+19:30:56  INFO      ❌  Amul Chocolate Whey Protein, 34 g | Pack of 30 sache  SOLD OUT    MRP₹2,070 (USP  ₹2.03/g)
+19:30:56  INFO      ❌  Amul High Protein Plain Lassi, 200 mL | Pack of 30    SOLD OUT    MRP₹750 (USP  ₹125.00/L) 👀
+19:30:56  INFO      ❌  Amul High Protein Rose Lassi, 200 mL | Pack of 30     SOLD OUT    MRP₹750 (USP  ₹125.00/L) 👀
+19:31:00  INFO      ✅ Email sent → 1601pranay@gmail.com | Subject: 🔔 [Amul Protein Shop] Tracker started — watching for stock changes
+19:31:00  INFO      --once flag set — exiting.

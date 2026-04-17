@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────
+#  Amul Protein Tracker — Configuration
+# ─────────────────────────────────────────────
+
+# How often to check (in minutes)
+# Note: for GitHub Actions deployment, set this in the workflow cron instead.
+check_interval_minutes: 30
+
+# ── Target websites to track ─────────────────
+websites:
+  - name: "Amul Protein Shop"
+    url: "https://shop.amul.com/en/browse/protein"
+    pincode: "411057"
+    type: "amul"
+
+# ── Email settings ────────────────────────────
+email:
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  sender_email: "1601pranay@gmail.com"
+  # For local runs: paste your Gmail App Password here.
+  # For GitHub Actions: leave this empty — it reads from GMAIL_PASSWORD secret.
+  sender_password: ""   # leave empty — GitHub Actions reads GMAIL_PASSWORD secret
+  recipient_email: "1601pranay@gmail.com"
+
+# ── Watch list ────────────────────────────────
+# If set, ONLY send email alerts for products whose names contain
+# any of these keywords (case-insensitive).
+# Leave empty ([]) to watch ALL products.
+#
+# All 17 products are still scraped and logged every run —
+# just the email is filtered to these keywords only.
+watch_keywords:
+  - "Plain Lassi"
+  - "Rose Lassi"
+
+# ── Notification behaviour ────────────────────
+notifications:
+  # Send email ONLY when a watched product flips SOLD OUT → AVAILABLE
+  notify_on_restock: true
+  # Also email when a product goes OUT OF STOCK (AVAILABLE → SOLD OUT)
+  notify_on_stockout: false
+  # Send email on every run regardless of changes (noisy — keep false)
+  always_send: false
+  # Send one startup email so you know the tracker is running
+  send_on_startup: true

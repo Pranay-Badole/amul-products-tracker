@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Debug artifacts (keep real files, ignore debug dumps)
+debug_page.html
+debug_screenshot.png
+dbg_*.png
+dbg_*.html
+
+# Local-only (don't commit these — GitHub Actions uses env var for password)
+# config.yaml is committed but sender_password should be cleared before pushing
+# or use the GMAIL_PASSWORD secret instead.
