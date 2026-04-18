@@ -31,6 +31,7 @@ email:
 # All 17 products are still scraped and logged every run —
 # just the email is filtered to these keywords only.
 watch_keywords:
+  - "Plain Lassi"
   - "Rose Lassi"
 
 # ── Notification behaviour ────────────────────
