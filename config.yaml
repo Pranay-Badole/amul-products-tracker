@@ -43,4 +43,4 @@ notifications:
   # Send email on every run regardless of changes (noisy — keep false)
   always_send: false
   # Send one startup email so you know the tracker is running
-  send_on_startup: true
+  send_on_startup: false
