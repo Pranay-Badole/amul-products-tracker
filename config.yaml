@@ -4,7 +4,7 @@
 
 # How often to check (in minutes)
 # Note: for GitHub Actions deployment, set this in the workflow cron instead.
-check_interval_minutes: 30
+check_interval_minutes: 5
 
 # ── Target websites to track ─────────────────
 websites:
@@ -20,7 +20,7 @@ email:
   sender_email: "1601pranay@gmail.com"
   # For local runs: paste your Gmail App Password here.
   # For GitHub Actions: leave this empty — it reads from GMAIL_PASSWORD secret.
-  sender_password: ""   # leave empty — GitHub Actions reads GMAIL_PASSWORD secret
+  sender_password: ""   # Keep empty — set GMAIL_PASSWORD in GitHub Secrets
   recipient_email: "1601pranay@gmail.com"
 
 # ── Watch list ────────────────────────────────

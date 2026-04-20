@@ -10,7 +10,7 @@ on:
   # NOTE: GitHub Actions minimum reliable interval is ~15-30 minutes.
   # Anything more frequent may be delayed on busy runners.
   schedule:
-    - cron: "*/30 * * * *"   # ← change this to adjust frequency
+    - cron: "*/5 * * * *"    # ← every 5 minutes
 
   # ── Manual trigger from GitHub UI ────────────────────────────────────────
   workflow_dispatch:
