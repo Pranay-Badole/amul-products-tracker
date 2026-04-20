@@ -7,8 +7,8 @@ Usage:
     python main.py --once            # single run then exit (used by GitHub Actions)
 """
 
+import requests
 import argparse
-import csv
 import json
 import logging
 import os
@@ -133,17 +133,23 @@ def run_check(config: dict, state: dict, is_startup: bool = False) -> dict:
             if watch_keywords else products
         )
 
-        # ── Write history to CSV ──────────────────
-        history_file = Path("run_history.csv")
-        write_header = not history_file.exists()
-        
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        with open(history_file, mode="a", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            if write_header:
-                writer.writerow(["Timestamp", "Site", "Product", "Status", "Price"])
-            for p in email_products:
-                writer.writerow([timestamp, site_name, p["name"], p["status"], p.get("price", "")])
+        # ── Send to Google Sheets ────────────────
+        webhook_url = os.environ.get("SHEETS_WEBHOOK_URL", "").strip() or config.get("google_sheets_webhook_url", "").strip()
+        if webhook_url:
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            try:
+                for p in email_products:
+                    payload = {
+                        "timestamp": timestamp,
+                        "site": site_name,
+                        "product": p["name"],
+                        "status": p["status"],
+                        "price": p.get("price", "")
+                    }
+                    requests.post(webhook_url, json=payload, timeout=5)
+                logger.info("  ✓ Successfully pushed statuses to Google Sheets!")
+            except Exception as e:
+                logger.error(f"  ❌ Failed to push to Google Sheets: {e}")
 
         should_send = always_send or has_change or startup_notify
 

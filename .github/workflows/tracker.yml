@@ -47,6 +47,7 @@ jobs:
       - name: Run tracker
         env:
           GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+          SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
         run: python main.py --once
 
       # 6. Commit updated state.json back to repo so next run remembers statuses
@@ -54,7 +55,7 @@ jobs:
         run: |
           git config --global user.name  "Amul Tracker Bot"
           git config --global user.email "amul-tracker-bot@users.noreply.github.com"
-          git add state.json tracker.log run_history.csv 2>/dev/null || true
+          git add state.json tracker.log 2>/dev/null || true
           git diff --staged --quiet && echo "No state changes." || \
             git commit -m "chore: update tracker state [skip ci]"
           git push origin HEAD || echo "Push skipped (no changes)"
