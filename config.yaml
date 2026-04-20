@@ -49,4 +49,4 @@ notifications:
 # Create a Google Apps Script Web App for your sheet
 # and paste its URL here to automatically log runs.
 # Leave empty ("") to disable logging to sheets.
-google_sheets_webhook_url: "https://script.google.com/macros/s/AKfycbz00UG9xyz6dYbBZSRkJg9PaXlvCLKy0XjCb_Qt-daD4dhClaJcz1c8rIoxUmksonpy/exec"
+google_sheets_webhook_url: ""
